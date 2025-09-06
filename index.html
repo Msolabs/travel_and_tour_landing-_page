@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    
+    <title>GlobeVista Travel and Tour Landing Page</title>
+  </head>
+  <body>
+     <!-- ================= Showcase / Hero Section ================= -->
+    <section class="showcase active">
+      <header>
+        <div class="logo-container">
+          <img src="./asset/media/logo.png" alt="GlobeVista Logo" class="logo-image" />
+        <h2 class="logo">GlobeVista Travel&Tour</h2></div>
+        
+           <!-- Navigation menu --> 
+
+        <nav class="menu active">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Testimonials</a></li>
+      </ul>
+    </nav>
+
+      <!-- Toggle button for mobile navigation -->
+        
+        <div class="toggle active"> </div>
+      </header>
+
+        <!-- Background video for hero section -->
+         
+      <video src="./asset/media/explore1.mp4" muted autoplay loop></video>
+      
+       <!-- Dark overlay for readability over video -->
+      <div class="overlay"> </div>
+      
+      <!-- Hero text content -->
+      <div class="text">
+        <h2>Welcome to GlobeVista Travel&Tour</h2>
+        <h3>Never Stop</h3>
+        <h3>Exploring the World</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          pariatur asperiores nulla enim maiores voluptate recusandae officiis
+          cumque, rem sint?
+        </p>
+      <a href="#">Explore</a>
+      </div>
+
+    </section>
+ <!-- ================= Book Now Call-to-Action ================= -->
+     <div class="book-now">
+      <p>Discover breathtaking destinations and unforgettable experiences.</p>
+    <a href="#" class="btn">Book Now</a>
+    </div>
+
+    <!-- ================= Info Section ================= -->
+    <section class="info-section">
+
+  
+  <!-- Featured Destination -->
+ <div class="featured-destination">
+    <h3>Destination of the Month</h3>
+    <p>Explore the breathtaking beaches of the Maldives with our special holiday package.</p>
+    <a href="#" class="btn">View Package</a>
+  </div>
+
+  <!-- Call to Action (CTA) for planning trip-->
+  <div class="cta-container">
+    <h3>Plan Your Next Adventure</h3>
+    <p>Let us help you discover the world with personalized travel packages.</p>
+    <a href="#" class="btn">Start Planning</a>
+  </div>
+  
+  
+  <!-- Newsletter Section form -->
+    <div class="newsletter-container">
+<h3>Subscribe to Our Newsletter</h3>
+<P>Get travel tips, destinations, and exclusive offers delivered straight to your inbox.</P>
+   <form class="newsletter-form" action="">
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+   </form>
+</div>
+
+</section>
+
+    <!-- <div  class="social-container">
+        <h3>Follow Us</h3>
+        <p>Stay connected with us on social media for the latest updates and offers.</p>
+       <ul class="social">
+          <li class="img"> <a href="#"><img src="./asset/media/facebook.png"alt="facebook"/></a></li>
+          <li class="img"><a href="#"><img src="./asset/media/instagram.png" alt="instagram"/></a></li>
+          <li class="img"><a href="#"><img src="./asset/media/twitter.png" alt="twitter"/></a></li>
+        </ul>
+    </div> -->
+
+    
+
+   
+ <!-- ================= JavaScript Section ================= -->
+    <script>
+      // const menuToggle = document.querySelector('.toggle');
+      // const showcase = document.querySelector('.showcase');
+
+      // menuToggle.addEventListener('click', () => {
+      //   menuToggle.classList.toggle('active');
+      //   showcase.classList.toggle('active');
+      // });
+      const toggle = document.querySelector('.toggle');
+      const menu = document.querySelector('.menu');
+      const menuToggle = document.querySelector('.toggle');
+      toggle.addEventListener('click', () => {
+      toggle.classList.toggle('active');
+      menu.classList.toggle('active');    
+      })
+    </script>
+
+    <!-- ================= Footer ================= -->
+      <footer class="footer">
+    <div class="footer-container">
+      <h3>GlobeVista Travel&Tour</h3>
+      <p>Discover breathtaking destinations and unforgettable experiences with us.</p>
+    </div>
+
+    <!-- Quick links for easy navigation -->
+    <div class="footer-links">
+     <div class="footer-quick-links">
+       <h3>Quick Links</h3>
+       <ul >
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+
+     </div>
+
+     <!-- Social media section -->
+
+    <div class="footer-social">
+      <h4>Follow Us </h4>
+      <ul class="social">
+        <li class="img"><a href="#"><img src="./asset/media/facebook.png" alt="facebook"/></a></li>
+        <li class="img"><a href="#"><img src="./asset/media/instagram.png" alt="instagram"/></a></li>
+        <li class="img"><a href="#"><img src="./asset/media/twitter.png" alt="twitter"/></a></li>
+    </div>
+
+     <!-- Legal section -->
+
+    <div class="footer-legal">
+      <h4> Legal</h4>
+       <ul >
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    </div>
+     
+    <!-- Contact information -->
+
+    <div class="footer-contact">
+      <h4> Contact Us</h4>
+      <p>Email: 2i6t5@example.com</p>
+      <p>Phone: +1 123-456-7890</p>
+      <p>Address: 123 Main Street, City, Country</p>
+    </div>
+
+    <!-- Bottom note -->
+<div class="footer-bottom">
+      <p>&copy; 2025 GlobeVista Travel&Tour. | Designed by <span>Moshood Owolabi</span></p>
+    </div>
+
+</div>
+  </footer>
+  </body>
+
+
+</html>
